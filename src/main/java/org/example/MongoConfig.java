@@ -1,3 +1,4 @@
+/*
 package org.example;
 
 import com.mongodb.client.MongoClient;
@@ -19,3 +20,4 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
         return MongoClients.create("mongodb://localhost:27017");
     }
 }
+*/

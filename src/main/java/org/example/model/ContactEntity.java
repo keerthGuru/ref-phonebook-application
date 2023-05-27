@@ -1,16 +1,16 @@
 package org.example.model;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
+@Entity
+@Table(name = "Contacts")
 public class ContactEntity {
-
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id", nullable = false)
     Integer id;
     String name;
     String email;
